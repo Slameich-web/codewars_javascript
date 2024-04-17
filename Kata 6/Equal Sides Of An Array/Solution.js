@@ -1,11 +1,7 @@
 function findEvenIndex(arr) {
-  for (let i = 1; i < arr.length - 1; i++) {
-    if (
-      arr.slice(0, i).reduce((a, b) => a + b) ===
-      arr.slice(i + 1).reduce((a, b) => a + b)
-    ) {
-      return i;
-    }
-  }
-  return -1;
+  return arr.findIndex(
+    (_, index, array) =>
+      array.slice(0, index).reduce((acc, item) => acc + item, 0) ===
+      array.slice(index + 1).reduce((acc, item) => acc + item, 0)
+  );
 }
