@@ -4,5 +4,6 @@ function isPrime(num) {
       return false;
     }
   }
+
   return num > 1;
 }
