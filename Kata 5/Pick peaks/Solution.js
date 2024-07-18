@@ -5,6 +5,7 @@ const pickPeaks = (arr) => {
     while (arr[i] === arr[i + next]) {
       next++;
     }
+
     if (arr[i] > arr[i - 1] && arr[i] > arr[i + next]) {
       result.pos.push(i);
       result.peaks.push(arr[i]);
