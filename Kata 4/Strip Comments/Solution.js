@@ -7,5 +7,6 @@ const solution = (input, markers) => {
   if (result) {
     return result.join("\n");
   }
+
   return result.join();
 };
