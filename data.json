@@ -1,0 +1,698 @@
+{
+  "metamodelVersion": "00001",
+
+  "module": "CI03793758_Addressbook-integration-service_audit_1",
+
+  "events": [
+    {
+      "name": "PROFILE_EDIT_SUCCESS",
+
+      "description": "изменение данных пользователя",
+
+      "mode": "reliability",
+
+      "success": true,
+
+      "params": [
+        {
+          "name": "adminId",
+
+          "description": "id администратора"
+        },
+        {
+          "name": "userId",
+
+          "description": "id пользователя"
+        },
+        {
+          "name": "photo",
+
+          "description": "фото пользователя"
+        },
+        {
+          "name": "absences",
+
+          "description": "отсутствие"
+        },
+        {
+          "name": "birthdayHidden",
+
+          "description": "скрыт ли день рождения"
+        },
+        {
+          "name": "carNumber",
+
+          "description": "номер машины"
+        },
+        {
+          "name": "emails",
+
+          "description": "адреса почты"
+        },
+        {
+          "name": "factualChief",
+
+          "description": "Руководитель"
+        },
+        {
+          "name": "phones",
+
+          "description": "номера телефонов"
+        },
+        {
+          "name": "secretaryOf",
+
+          "description": "Секретарь"
+        },
+        {
+          "name": "responsibilities",
+
+          "description": "Обязанности"
+        },
+        {
+          "name": "skills",
+
+          "description": "навыки"
+        },
+        {
+          "name": "fullName",
+
+          "description": "ФИО"
+        },
+        {
+          "name": "workPlace",
+
+          "description": "Место работы"
+        },
+        {
+          "name": "date",
+
+          "description": "дата события"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE_EDIT_FAIL",
+
+      "description": "изменение данных пользователя",
+
+      "mode": "reliability",
+
+      "success": false,
+
+      "params": [
+        {
+          "name": "adminId",
+
+          "description": "id администратора"
+        },
+        {
+          "name": "userId",
+
+          "description": "id пользователя"
+        },
+        {
+          "name": "photo",
+
+          "description": "фото пользователя"
+        },
+        {
+          "name": "absences",
+
+          "description": "отсутствие"
+        },
+        {
+          "name": "birthdayHidden",
+
+          "description": "скрыт ли день рождения"
+        },
+        {
+          "name": "carNumber",
+
+          "description": "номер машины"
+        },
+        {
+          "name": "emails",
+
+          "description": "адреса почты"
+        },
+        {
+          "name": "factualChief",
+
+          "description": "Руководитель"
+        },
+        {
+          "name": "phones",
+
+          "description": "номера телефонов"
+        },
+        {
+          "name": "secretaryOf",
+
+          "description": "Секретарь"
+        },
+        {
+          "name": "responsibilities",
+
+          "description": "Обязанности"
+        },
+        {
+          "name": "skills",
+
+          "description": "навыки"
+        },
+        {
+          "name": "fullName",
+
+          "description": "ФИО"
+        },
+        {
+          "name": "workPlace",
+
+          "description": "Место работы"
+        },
+        {
+          "name": "date",
+
+          "description": "дата события"
+        },
+        {
+          "name": "errorType",
+
+          "description": "Тип ошибки"
+        },
+        {
+          "name": "errorText",
+
+          "description": "Текст ошибки"
+        }
+      ]
+    },
+    {
+      "name": "BANNER_CREATE_SUCCESS",
+
+      "description": "добавление баннеров",
+
+      "mode": "reliability",
+
+      "success": true,
+
+      "params": [
+        {
+          "name": "adminId",
+
+          "description": "id администратора"
+        },
+        {
+          "name": "urlSigma",
+
+          "description": "ссылка для sigma"
+        },
+        {
+          "name": "urlOmega",
+
+          "description": "ссылка для omega"
+        },
+        {
+          "name": "startDate",
+
+          "description": "Дата начала"
+        },
+        {
+          "name": "endDate",
+
+          "description": "Дата окончания"
+        },
+        {
+          "name": "id",
+
+          "description": "id баннера"
+        },
+        {
+          "name": "date",
+
+          "description": "дата события"
+        }
+      ]
+    },
+    {
+      "name": "BANNER_DELETE_SUCCESS",
+
+      "description": "удаление баннера",
+
+      "mode": "reliability",
+
+      "success": true,
+
+      "params": [
+        {
+          "name": "adminId",
+
+          "description": "id администратора"
+        },
+        {
+          "name": "id",
+
+          "description": "id баннера"
+        },
+        {
+          "name": "date",
+
+          "description": "дата события"
+        }
+      ]
+    },
+    {
+      "name": "BANNER_EDIT_SUCCESS",
+
+      "description": "редактирование баннера",
+
+      "mode": "reliability",
+
+      "success": true,
+
+      "params": [
+        {
+          "name": "adminId",
+
+          "description": "id администратора"
+        },
+        {
+          "name": "urlSigma",
+
+          "description": "ссылка для sigma"
+        },
+        {
+          "name": "urlOmega",
+
+          "description": "ссылка для omega"
+        },
+        {
+          "name": "startDate",
+
+          "description": "Дата начала"
+        },
+        {
+          "name": "endDate",
+
+          "description": "Дата окончания"
+        },
+        {
+          "name": "id",
+
+          "description": "id баннера"
+        },
+        {
+          "name": "date",
+
+          "description": "дата события"
+        }
+      ]
+    },
+    {
+      "name": "ORGANIZATION_CREATE_SUCCESS",
+
+      "description": "создание организации",
+
+      "mode": "reliability",
+
+      "success": true,
+
+      "params": [
+        {
+          "name": "adminId",
+
+          "description": "id администратора"
+        },
+        {
+          "name": "name",
+
+          "description": "название организации"
+        },
+        {
+          "name": "type",
+
+          "description": "тип организации"
+        },
+        {
+          "name": "id",
+
+          "description": "id баннера"
+        },
+        {
+          "name": "date",
+
+          "description": "дата события"
+        }
+      ]
+    },
+    {
+      "name": "ADDRESS_EDIT_SUCCESS",
+
+      "description": "редактирование адреса",
+
+      "mode": "reliability",
+
+      "success": true,
+
+      "params": [
+        {
+          "name": "adminId",
+
+          "description": "id администратора"
+        },
+        {
+          "name": "country",
+
+          "description": "страна"
+        },
+        {
+          "name": "area",
+
+          "description": "область"
+        },
+        {
+          "name": "city",
+
+          "description": "город"
+        },
+        {
+          "name": "district",
+
+          "description": "район"
+        },
+        {
+          "name": "street",
+
+          "description": "улица"
+        },
+        {
+          "name": "building",
+
+          "description": "дом"
+        },
+        {
+          "name": "id",
+
+          "description": "id адреса"
+        },
+        {
+          "name": "date",
+
+          "description": "дата события"
+        }
+      ]
+    },
+    {
+      "name": "DEPARTMENT_EDIT_SUCCESS",
+
+      "description": "редактирование департамента",
+
+      "mode": "reliability",
+
+      "success": true,
+
+      "params": [
+        {
+          "name": "adminId",
+
+          "description": "id администратора"
+        },
+        {
+          "name": "departmentId",
+
+          "description": "id департамента"
+        },
+        {
+          "name": "addressId",
+
+          "description": "id адреса"
+        },
+        {
+          "name": "dutyPersonPhone",
+
+          "description": "телефон подразделения"
+        },
+        {
+          "name": "description",
+
+          "description": "дополнительная информация"
+        },
+        {
+          "name": "phone",
+
+          "description": "Телефон дежурного"
+        },
+        {
+          "name": "date",
+
+          "description": "дата события"
+        }
+      ]
+    },
+    {
+      "name": "CONSUMER_CREATE_SUCCESS",
+
+      "description": "добавление потребителя",
+
+      "mode": "reliability",
+
+      "success": true,
+
+      "params": [
+        {
+          "name": "adminId",
+
+          "description": "id администратора"
+        },
+        {
+          "name": "name",
+
+          "description": "название"
+        },
+        {
+          "name": "certificateSubject",
+
+          "description": "сертификат"
+        },
+        {
+          "name": "info",
+
+          "description": "контактная информация"
+        },
+        {
+          "name": "roles",
+
+          "description": "роли"
+        },
+        {
+          "name": "id",
+
+          "description": "id потребителя"
+        },
+        {
+          "name": "date",
+
+          "description": "дата события"
+        }
+      ]
+    },
+    {
+      "name": "CONSUMER_EDIT_SUCCESS",
+
+      "description": "редактирование потребителя",
+
+      "mode": "reliability",
+
+      "success": true,
+
+      "params": [
+        {
+          "name": "adminId",
+
+          "description": "id администратора"
+        },
+        {
+          "name": "name",
+
+          "description": "название"
+        },
+        {
+          "name": "certificateSubject",
+
+          "description": "сертификат"
+        },
+        {
+          "name": "info",
+
+          "description": "контактная информация"
+        },
+        {
+          "name": "roles",
+
+          "description": "роли"
+        },
+        {
+          "name": "id",
+
+          "description": "id потребителя"
+        },
+        {
+          "name": "date",
+
+          "description": "дата события"
+        }
+      ]
+    },
+    {
+      "name": "CONSUMER_DELETE_SUCCESS",
+
+      "description": "удаление потребителя",
+
+      "mode": "reliability",
+
+      "success": true,
+
+      "params": [
+        {
+          "name": "adminId",
+
+          "description": "id администратора"
+        },
+        {
+          "name": "id",
+
+          "description": "id потребителя"
+        },
+        {
+          "name": "date",
+
+          "description": "дата события"
+        }
+      ]
+    },
+    {
+      "name": "DZO_ADD_SUCCESS",
+
+      "description": "добавление ДЗО",
+
+      "mode": "reliability",
+
+      "success": true,
+
+      "params": [
+        {
+          "name": "adminId",
+
+          "description": "id администратора"
+        },
+        {
+          "name": "data",
+
+          "description": "данные о ДЗО"
+        },
+        {
+          "name": "isReplaced",
+
+          "description": "заменить данные"
+        },
+        {
+          "name": "date",
+
+          "description": "дата события"
+        }
+      ]
+    },
+    {
+      "name": "DZO_ORGANIZATION_ADD_SUCCESS",
+
+      "description": "добавление организации ДЗО",
+
+      "mode": "reliability",
+
+      "success": true,
+
+      "params": [
+        {
+          "name": "adminId",
+
+          "description": "id администратора"
+        },
+        {
+          "name": "data",
+
+          "description": "данные о ДЗО"
+        },
+        {
+          "name": "isReplaced",
+
+          "description": "тип ДЗО"
+        },
+        {
+          "name": "date",
+
+          "description": "дата события"
+        }
+      ]
+    },
+    {
+      "name": "BADGE_ADD_SUCCESS",
+
+      "description": "добавление бейджа",
+
+      "mode": "reliability",
+
+      "success": true,
+
+      "params": [
+        {
+          "name": "adminId",
+
+          "description": "id администратора"
+        },
+        {
+          "name": "id",
+
+          "description": "id бейджа"
+        },
+        {
+          "name": "name",
+
+          "description": "название бейджа"
+        },
+        {
+          "name": "date",
+
+          "description": "дата события"
+        }
+      ]
+    },
+    {
+      "name": "BADGES_ADD_SUCCESS",
+
+      "description": "добавление бейджей",
+
+      "mode": "reliability",
+
+      "success": true,
+
+      "params": [
+        {
+          "name": "adminId",
+
+          "description": "id администратора"
+        },
+        {
+          "name": "data",
+
+          "description": "данные о бейджах"
+        },
+        {
+          "name": "date",
+
+          "description": "дата события"
+        }
+      ]
+    }
+  ]
+}
